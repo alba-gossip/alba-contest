@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alba Gossip</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #fbe9c0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Titolo */
+    .header {
+      background-color: #702c82;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* Testi */
+    .texts {
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .text-small {
+      font-size: 1rem;
+      margin-top: 4px;
+    }
+
+    /* QR */
+    .logo {
+      max-height: 35vh;
+      width: auto;
+      border-radius: 12%;
+    }
+
+    /* Frecce */
+    .arrows {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      max-width: 220px;
+    }
+
+    .arrows img {
+      width: 40px;
+      height: auto;
+    }
+
+    /* Pulsanti */
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .btn {
+      background-color: #f8b537;
+      color: black;
+      font-weight: bold;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1rem;
+      min-width: 120px;
+      transition: background 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .btn small {
+      font-weight: normal;
+      font-size: 0.75rem;
+    }
+
+    /* Solo i pulsanti senza <small> (APRIMI) */
+    .btn:not(:has(small)) {
+      flex-direction: row;
+    }
+
+    .btn:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Footer */
+    .footer {
+      width: 100%;
+      background-color: white;
+      border-top: 2px solid #ddd;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      box-sizing: border-box;
+    }
+
+    .footer-left, .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      line-height: 1;
+    }
+
+    .footer img {
+      width: 28px;
+      height: auto;
+    }
+
+    .footer-center img {
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Titolo -->
+    <div class="header">ALBA GOSSIP</div>
+
+    <!-- Testi -->
+    <div class="texts">
+      <div class="subtitle">SIAMO NELLE VOSTRE MANI</div>
+      <div class="text-small">REPUBBLICATE IL PIÙ POSSIBILE</div>
+    </div>
+
+    <!-- QR CODE -->
+    <img src="immagini/logo-alba-contest-2.png" alt="logo alba contest" class="logo">
+
+    <!-- Frecce -->
+    <div class="arrows">
+      <img src="SVG/freccia-sn.svg" alt="Freccia sinistra">
+      <img src="SVG/freccia-dx.svg" alt="Freccia destra">
+    </div>
+
+    <!-- Pulsanti -->
+    <div class="buttons">
+      <a href="INSERISCI_LINK_APRIMI" target="_blank" class="btn">APRIMI</a>
+      <a href="pagina-scarica.html" class="btn">SCARICAMI<small> E PUBBLICA</small></a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-left">
+      <a href="https://www.instagram.com/alba__gossip" target="_blank">
+        <img src="SVG/instagram-logo.svg" alt="Instagram">
+      </a>
+      <span>@alba__gossip</span>
+    </div>
+    <div class="footer-center">
+      <img src="SVG/logo-alba-gossip.svg" alt="Alba Gossip">
+    </div>
+    <div class="footer-right">
+      <span>alba__gossip</span> 
+      <a href="https://ngl.link/alba___gossip" target="_blank">
+        <img src="SVG/ngl-logo.svg" alt="NGL">
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
