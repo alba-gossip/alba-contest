@@ -14,6 +14,7 @@
       display: flex;
       flex-direction: column;
       position: relative;
+      overflow: hidden; /* niente scroll pagina */
     }
 
     .container {
@@ -23,17 +24,17 @@
       align-items: center;
       justify-content: space-between;
       text-align: center;
-      padding: 15px;
+      padding: 12px;
       box-sizing: border-box;
     }
 
     /* Pulsante indietro */
     .back-btn {
       position: absolute;
-      top: 15px;
-      left: 15px;
-      width: 38px;
-      height: 38px;
+      top: 12px;
+      left: 12px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       background-color: #702c82;
       display: flex;
@@ -55,32 +56,32 @@
     .header {
       background-color: #702c82;
       color: white;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: bold;
-      padding: 12px 30px;
+      padding: 10px 24px;
       border-radius: 30px;
-      margin-top: 15px;
+      margin-top: 12px;
       white-space: nowrap;
     }
 
     .subtitle {
       font-weight: bold;
-      font-size: 1.2rem;
-      margin-top: 8px;
+      font-size: 1.1rem;
+      margin-top: 6px;
     }
 
     .text-small {
-      font-size: 1rem;
-      margin-bottom: 15px;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
     }
 
     /* Riquadro regolamento */
     .box {
       background-color: #f8b537;
-      border-radius: 25px;
-      padding: 25px;       /* più distanziato dai bordi */
+      border-radius: 20px;
+      padding: 16px;
       width: 90%;
-      max-width: 500px;
+      max-width: 480px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -89,27 +90,26 @@
     .box-title {
       background-color: #fbe9c0;
       font-weight: bold;
-      font-size: 1.3rem;
-      padding: 8px 20px;
-      border-radius: 20px;
-      margin-bottom: 15px;
+      font-size: 1.1rem;
+      padding: 5px 14px;
+      border-radius: 18px;
+      margin-bottom: 8px;
       text-align: center;
     }
 
     .box-content {
-      font-size: 1rem;
-      line-height: 1.6;
+      font-size: 0.9rem;   /* più piccolo */
+      line-height: 1.25;   /* molto compatto */
       text-align: justify;
-      overflow: visible;  /* niente testo nascosto */
     }
 
     .box-content ol {
       margin: 0;
-      padding-left: 20px;
+      padding-left: 16px;
     }
 
     .box-content li {
-      margin-bottom: 10px;
+      margin-bottom: 2px; /* spaziatura minima */
     }
 
     /* Footer */
@@ -117,29 +117,28 @@
       width: 100%;
       background-color: white;
       border-top: 2px solid #ddd;
-      padding: 8px 16px;
+      padding: 6px 12px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       box-sizing: border-box;
-      margin-top: 20px;
     }
 
     .footer-left, .footer-right {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 4px;
       line-height: 1;
     }
 
     .footer img {
-      width: 28px;
+      width: 24px;
       height: auto;
     }
 
     .footer-center img {
-      width: 40px;
+      width: 32px;
     }
   </style>
 </head>
