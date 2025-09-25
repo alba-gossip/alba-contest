@@ -14,7 +14,6 @@
       display: flex;
       flex-direction: column;
       position: relative;
-      overflow: hidden; /* niente scroll */
     }
 
     .container {
@@ -79,39 +78,34 @@
     .box {
       background-color: #f8b537;
       border-radius: 25px;
-      padding: 25px; /* aumentato */
+      padding: 25px;       /* più distanziato dai bordi */
       width: 90%;
       max-width: 500px;
-      height: 55vh; /* fissa per evitare scroll */
       display: flex;
       flex-direction: column;
       align-items: center;
-      box-sizing: border-box;
     }
 
     .box-title {
       background-color: #fbe9c0;
       font-weight: bold;
       font-size: 1.3rem;
-      padding: 12px 30px; /* più padding per centrare meglio */
+      padding: 8px 20px;
       border-radius: 20px;
-      margin-bottom: 16px;
+      margin-bottom: 15px;
       text-align: center;
     }
 
     .box-content {
-      flex: 1;
-      overflow-wrap: break-word;
-      word-break: break-word;
       font-size: 1rem;
-      line-height: 1.5;
-      text-align: justify;   /* giustificato */
-      overflow: hidden;
+      line-height: 1.6;
+      text-align: justify;
+      overflow: visible;  /* niente testo nascosto */
     }
 
     .box-content ol {
       margin: 0;
-      padding-left: 22px;
+      padding-left: 20px;
     }
 
     .box-content li {
@@ -129,6 +123,7 @@
       align-items: center;
       font-size: 0.8rem;
       box-sizing: border-box;
+      margin-top: 20px;
     }
 
     .footer-left, .footer-right {
@@ -171,7 +166,7 @@
       <div class="box-content">
         <p>📣Regolamento dell’ALBA CONTEST🗣</p>
         <ol>
-          <li>Salva <strong>l’immagine ufficiale del contest </strong>(pulsante “scaricami” o screenshot)🔥</li>
+          <li>Salva <strong>l’immagine ufficiale del contest</strong> (pulsante “scaricami” o screenshot)🔥</li>
           <li><strong>Pubblicala</strong> nelle tue storie Instagram📲</li>
           <li>Non dimenticarti di <strong>taggare <b>@alba__gossip</b></strong>, così possiamo vederti👩‍💻🧑‍💻!</li>
           <li>Alla fine della giornata sceglieremo <strong>5 fortunati/e</strong> (il numero varia in base al numero di partecipanti 👀).</li>
@@ -206,4 +201,3 @@
 
 </body>
 </html>
-
