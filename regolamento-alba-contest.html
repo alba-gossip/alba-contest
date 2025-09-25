@@ -86,7 +86,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
     }
 
     .box-title {
@@ -100,15 +99,21 @@
 
     .box-content {
       flex: 1;
-      display: flex;
-      align-items: center;      /* centra verticalmente */
-      justify-content: center;  /* centra orizzontalmente */
-      text-align: center;
-      font-size: 1rem;
-      line-height: 1.4;
       overflow-wrap: break-word;
       word-break: break-word;
-      padding: 0 8px;
+      font-size: 1rem;
+      line-height: 1.4;
+      text-align: justify;   /* giustificato */
+      overflow: hidden;
+    }
+
+    .box-content ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .box-content li {
+      margin-bottom: 8px;
     }
 
     /* Footer */
@@ -162,14 +167,18 @@
     <div class="box">
       <div class="box-title">REGOLAMENTO</div>
       <div class="box-content">
-📣Regolamento dell’ALBA CONTEST🗣<br>
-1. Salva l’immagine ufficiale del contest (pulsante “scaricami” o screenshot)🔥<br>
-2. Pubblicala nelle tue storie Instagram📲<br>
-3. Non dimenticarti di taggare @alba__gossip, così possiamo vederti👩‍💻🧑‍💻!<br>
-4. Alla fine della giornata sceglieremo 5 fortunati/e (il numero varia in base al numero di partecipanti 👀).<br>
-5. I vincitori avranno il loro profilo ricondiviso nelle nostre storie✨🚀<br><br>
-💡 Più gente partecipa, più possibilità avrai!<br>
-👉 Quindi… sei ancora qui? Entra anche tu nel gossip più caldo della zona! 🔥💜
+        <p>📣Regolamento dell’ALBA CONTEST🗣</p>
+        <ol>
+          <li>Salva l’immagine ufficiale del contest (pulsante “scaricami” o screenshot)🔥</li>
+          <li>Pubblicala nelle tue storie Instagram📲</li>
+          <li>Non dimenticarti di taggare <b>@alba__gossip</b>, così possiamo vederti👩‍💻🧑‍💻!</li>
+          <li>Alla fine della giornata sceglieremo 5 fortunati/e (il numero varia in base al numero di partecipanti 👀).</li>
+          <li>I vincitori avranno il loro profilo ricondiviso nelle nostre storie✨🚀</li>
+        </ol>
+        <p>
+          💡 Più gente partecipa, più possibilità avrai!<br>
+          👉 Quindi… sei ancora qui? Entra anche tu nel gossip più caldo della zona! 🔥💜
+        </p>
       </div>
     </div>
   </div>
