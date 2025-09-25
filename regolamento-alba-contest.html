@@ -14,6 +14,7 @@
       display: flex;
       flex-direction: column;
       position: relative;
+      overflow: hidden; /* niente scroll */
     }
 
     .container {
@@ -21,6 +22,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: space-between;
       text-align: center;
       padding: 15px;
       box-sizing: border-box;
@@ -58,29 +60,33 @@
       font-weight: bold;
       padding: 12px 30px;
       border-radius: 30px;
-      margin-top: 20px;
+      margin-top: 15px;
       white-space: nowrap;
     }
 
     .subtitle {
       font-weight: bold;
       font-size: 1.2rem;
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
     .text-small {
       font-size: 1rem;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     /* Riquadro regolamento */
     .box {
       background-color: #f8b537;
       border-radius: 25px;
-      padding: 20px;
+      padding: 15px;
       width: 90%;
       max-width: 500px;
-      margin-bottom: 25px;
+      height: 55vh; /* fissa per evitare scroll */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .box-title {
@@ -89,15 +95,20 @@
       font-size: 1.3rem;
       padding: 8px 20px;
       border-radius: 20px;
-      display: inline-block;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .box-content {
-      text-align: left;
+      flex: 1;
+      display: flex;
+      align-items: center;      /* centra verticalmente */
+      justify-content: center;  /* centra orizzontalmente */
+      text-align: center;
       font-size: 1rem;
-      line-height: 1.5;
-      white-space: pre-line; /* rispetta le andate a capo */
+      line-height: 1.4;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      padding: 0 8px;
     }
 
     /* Footer */
@@ -142,21 +153,22 @@
     <div class="header">ALBA GOSSIP</div>
 
     <!-- Testo sotto titolo -->
-    <div class="subtitle">SIAMO NELLE VOSTRE MANI</div>
-    <div class="text-small">REPUBBLICATE IL PIÙ POSSIBILE</div>
+    <div>
+      <div class="subtitle">SIAMO NELLE VOSTRE MANI</div>
+      <div class="text-small">REPUBBLICATE IL PIÙ POSSIBILE</div>
+    </div>
 
     <!-- Riquadro giallo -->
     <div class="box">
       <div class="box-title">REGOLAMENTO</div>
       <div class="box-content">
-📣Regolamento dell’ALBA CONTEST🗣
-1. Salva l’immagine ufficiale del contest (pulsante “scaricami” o screenshot)🔥
-2. Pubblicala nelle tue storie Instagram📲
-3. Non dimenticarti di taggare @alba__gossip, così possiamo vederti👩‍💻🧑‍💻!
-4. Alla fine della giornata sceglieremo 5 fortunati/e (il numero varia in base al numero di partecipanti 👀).
-5. I vincitori avranno il loro profilo ricondiviso nelle nostre storie✨🚀
-
-💡 Più gente partecipa, più possibilità avrai!
+📣Regolamento dell’ALBA CONTEST🗣<br>
+1. Salva l’immagine ufficiale del contest (pulsante “scaricami” o screenshot)🔥<br>
+2. Pubblicala nelle tue storie Instagram📲<br>
+3. Non dimenticarti di taggare @alba__gossip, così possiamo vederti👩‍💻🧑‍💻!<br>
+4. Alla fine della giornata sceglieremo 5 fortunati/e (il numero varia in base al numero di partecipanti 👀).<br>
+5. I vincitori avranno il loro profilo ricondiviso nelle nostre storie✨🚀<br><br>
+💡 Più gente partecipa, più possibilità avrai!<br>
 👉 Quindi… sei ancora qui? Entra anche tu nel gossip più caldo della zona! 🔥💜
       </div>
     </div>
